@@ -1,6 +1,8 @@
 let dataAtual = new Date();
 let fraseHTML = document.getElementById("fraseID")
 let dataHTML = document.getElementById("data")
+let horaHTML = document.getElementById("hora")
+
 let frases_do_dia = [
     "Sorte é o resultado de muito esforço, trabalho e dedicação",
     "Imagine uma nova história para sua vida e acredite nela",
@@ -35,5 +37,13 @@ let frases_do_dia = [
     "A esperança é o sonho do homem acordado"
 ]
 
+if (dataAtual.getHours() >= 0 && dataAtual.getHours() < 12) {
+    horaHTML.textContent = "BOM DIA!"
+} else if (dataAtual.getHours() >= 12 && dataAtual.getHours() < 18) {
+    horaHTML.textContent = "BOA TARDE!"
+} else if (dataAtual.getHours() >= 18 && dataAtual.getHours() <= 24){
+    horaHTML.textContent = "BOA NOITE!"
+}
+
 fraseHTML.textContent = frases_do_dia[dataAtual.getDate()].toUpperCase()
-dataHTML.textContent = `Data: 0${dataAtual.getDay()}/0${dataAtual.getMonth()+1}/${dataAtual.getFullYear()}`
+dataHTML.textContent = `Data: ${dataAtual.getDate()}/0${dataAtual.getMonth()+1}/${dataAtual.getFullYear()}`
