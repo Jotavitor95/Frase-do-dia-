@@ -1,7 +1,7 @@
 let dataAtual = new Date();
 let fraseHTML = document.getElementById("fraseID")
 let dataHTML = document.getElementById("data")
-let horaHTML = document.getElementById("hora")
+let horaHTML = document.getElementById("hora");
 
 let frases_do_dia = [
     "Sorte é o resultado de muito esforço, trabalho e dedicação",
@@ -40,9 +40,11 @@ let frases_do_dia = [
 if (dataAtual.getHours() >= 0 && dataAtual.getHours() < 12) {
     horaHTML.textContent = "BOM DIA!"
     document.querySelector("body").style.backgroundImage = "url(./lib/img/dia.jpg)";
+
 } else if (dataAtual.getHours() >= 12 && dataAtual.getHours() < 18) {
     horaHTML.textContent = "BOA TARDE!"
     document.querySelector("body").style.backgroundImage = "url(./lib/img/tarde.jpg)";
+
 } else if (dataAtual.getHours() >= 18 && dataAtual.getHours() <= 24){
     horaHTML.textContent = "BOA NOITE!"
     document.querySelector("body").style.backgroundImage = "url(./lib/img/noite.jpg)";

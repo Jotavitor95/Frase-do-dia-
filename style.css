@@ -21,13 +21,13 @@ h2 {
     font-size: 30px;
 }
 
-h3 {
+/* h3 {
     color: #ffffff;
     margin-top: 20px;
     display: flex;
     position: absolute;
     bottom: 5px;
-}
+} */
 
 h4 {
     color: #0b006d;
@@ -55,4 +55,17 @@ h4 {
     opacity: 100%;
     border: solid #5c3700fd 10px;
     background-color: #ece7bd;
+}
+
+.container-data {
+    opacity: 65%;
+    background-color: #ffffff;
+    border-radius: 0px 50px 50px 0px;
+    border: solid #1e0d00fd 10px;
+    padding: 5px 24px 5px 5px;
+    /* width: 300px; */
+    text-align: start;
+    position: absolute;
+    top: 820px;
+    overflow: hidden;
 }
