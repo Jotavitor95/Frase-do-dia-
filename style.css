@@ -50,3 +50,9 @@ h4 {
     padding: 50px;
     border: solid #683e00fd 10px;
 }
+
+.container-frases:hover {
+    opacity: 100%;
+    border: solid #5c3700fd 10px;
+    background-color: #ece7bd;
+}
