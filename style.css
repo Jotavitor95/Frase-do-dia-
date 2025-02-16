@@ -3,18 +3,30 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
 h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #ff6a00;
+    color: #ffffff;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
+h2 {
+    font-size: 30px;
+}
+
 h3 {
-    color: #ff6a00;
+    color: #ffffff;
     margin-top: 20px;
+    display: flex;
+    position: absolute;
+    bottom: 5px;
 }
 
 h4 {
@@ -27,10 +39,14 @@ h4 {
 }
 
 .container-frases {
-    height: 100px;
+    opacity: 65%;
+    height: 20px;
     box-sizing: border-box;
     background-color: #fcf7d7;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 40px;
+    padding: 50px;
+    border: solid #683e00fd 10px;
 }

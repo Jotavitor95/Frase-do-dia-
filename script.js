@@ -39,11 +39,14 @@ let frases_do_dia = [
 
 if (dataAtual.getHours() >= 0 && dataAtual.getHours() < 12) {
     horaHTML.textContent = "BOM DIA!"
+    document.querySelector("body").style.backgroundImage = "url(./lib/img/dia.jpg)";
 } else if (dataAtual.getHours() >= 12 && dataAtual.getHours() < 18) {
     horaHTML.textContent = "BOA TARDE!"
+    document.querySelector("body").style.backgroundImage = "url(./lib/img/tarde.jpg)";
 } else if (dataAtual.getHours() >= 18 && dataAtual.getHours() <= 24){
     horaHTML.textContent = "BOA NOITE!"
+    document.querySelector("body").style.backgroundImage = "url(./lib/img/noite.jpg)";
 }
 
-fraseHTML.textContent = frases_do_dia[dataAtual.getDate()].toUpperCase()
+fraseHTML.textContent = frases_do_dia[dataAtual.getDay()];
 dataHTML.textContent = `Data: ${dataAtual.getDate()}/0${dataAtual.getMonth()+1}/${dataAtual.getFullYear()}`
